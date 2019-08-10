@@ -23,18 +23,24 @@ export default class JobLists extends Component {
         {data.map(item => (
           <div className='card' key={item.hashid}>
             <p>
-              Job Title: <span>{item.title}</span>{' '}
+              <i class='fas fa-briefcase' /> <span>{item.title}</span>{' '}
             </p>
             <p>
-              Location: <span>{item.location}</span>{' '}
-            </p>
-            <p>
-              Company Name: <span>{item.company_name}</span>{' '}
-            </p>
-            <p>
-              Feature Text:{' '}
+              <i class='fas fa-map-marked-alt fa-sm' />
               <span>
-                {!item.featured_text && 'No'} {item.featured_text}
+                {!item.location && 'Not Posted'}
+                {item.location}
+              </span>{' '}
+            </p>
+            <p>
+              <i class='fas fa-building fa-sm' />{' '}
+              <span>{item.company_name}</span>{' '}
+            </p>
+            <p>
+              <i class='fas fa-info-circle fa-sm' />{' '}
+              <span>
+                {!item.featured_text && 'Not in Description'}{' '}
+                {item.featured_text}
               </span>
             </p>
             <JobLink href={item.url} text='Job Post &rarr;' target='_blank' />
