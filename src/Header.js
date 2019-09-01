@@ -3,8 +3,7 @@ import React from 'react';
 function Header() {
   return (
     <div className='header'>
-      <p>Job Lists from Codepen</p>
-      <p className='name'>Coded by Saw Phaung</p>
+      <h1 className='header_heading'>Job Lists from Codepen</h1>
     </div>
   );
 }

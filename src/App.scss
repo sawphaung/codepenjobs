@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: linear-gradient(to bottom, #d5dee7 0%, #e8ebf2 50%, #e2e7ed 100%),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.02) 50%,
+      rgba(255, 255, 255, 0.02) 61%,
+      rgba(0, 0, 0, 0.02) 73%
+    ),
+    linear-gradient(33deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-blend-mode: normal, color-burn;
+}
+
+.header {
+  background-image: linear-gradient(
+    to right,
+    #3ab5b0 0%,
+    #3d99be 31%,
+    #56317a 100%
+  );
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_heading {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 1px;
+    padding: 60px 0;
+  }
+}
+
+.container {
+  width: 85%;
+  margin: 25px auto;
+}
+
+.card-container {
+  margin-top: 20px;
+}
+
+.fas {
+  color: #683e7e;
+  margin-right: 5px;
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 50px 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: ghostwhite;
+  transition: 200ms all ease;
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.card p {
+  margin: 18px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+span {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.button {
+  margin-bottom: 15px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+  border: 2px solid #5e227f;
+  padding: 4px 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 800px) {
+  .header {
+    height: 30vh;
+
+    &_heading {
+      font-size: 50px;
+    }
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    width: 40%;
+    margin: 30px 0;
+  }
+}
