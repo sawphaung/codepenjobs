@@ -1,4 +1,4 @@
-Fetching data from Codepen Website!!
+Fetching data from Codepen's API!!
 
 ### `npm install`
 
